@@ -1162,7 +1162,7 @@ const detectedLocale = detectLocale(fallbackLocale, availableLocales, customDete
 
 ### Server
 
-This detectors are expected to run on a server-environment e.g. an express server or serverless function. These detectors **all expect** an [`express`](http://expressjs.com/)-compatible [`req`](http://expressjs.com/en/api.html#req) object.
+These detectors are expected to run on a server-environment e.g. an express server or serverless function. These detectors **all expect** an [`express`](http://expressjs.com/)-compatible [`req`](http://expressjs.com/en/api.html#req) object.
 
 #### `accept-language` header
 
@@ -1389,7 +1389,7 @@ const getDataFromAPI = async (locale: string) => {
       HI: 'Hello {name:string}',
       login: {
          validation: {
-            username: 'Username "{username}" to short'
+            username: 'Username "{username}" too short'
          }
       }
    }
